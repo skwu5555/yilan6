@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link href="http://jqmdesigner.appspot.com/gk/lib/jquery.mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+    $(document).on("mobileinit", function () {
+      $.mobile.autoInitializePage = false;
+      $.mobile.hashListeningEnabled = false;
+    });
+
+    function mobileInitPage() {
+      $.mobile.hashListeningEnabled = true;
+      $.mobile.initializePage();
+    };
+  </script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <!-- Uncomment the following to include cordova in your android project -->
+  <!--<script src="http://jqmdesigner.appspot.com/platforms/android/cordova.js"></script>-->
+  <!-- GK Loader use RequireJS to load module -->
+  <script src="http://requirejs.org/docs/release/2.1.11/minified/require.js"></script>
+  <!--Plug in GK-->
+  <script src="http://jqmdesigner.appspot.com/components/jquery.gk/jquery.gk.min.js"></script>
+  <!-- Load GK components -->
+  <script components="http://jqmdesigner.appspot.com/components/gk-ext/image.html,http://jqmdesigner.appspot.com/components/gk-jquerymobile/content.html,http://jqmdesigner.appspot.com/components/gk-ext/gk-text.html,http://jqmdesigner.appspot.com/components/gk-jquerymobile/grid.html,http://jqmdesigner.appspot.com/components/gk-jquerymobile/page.html,http://jqmdesigner.appspot.com/components/gk-jquerymobile/button.html,http://jqmdesigner.appspot.com/components/gk-jquerymobile/footer.html,http://jqmdesigner.appspot.com/components/gk-jquerymobile/block.html,http://jqmdesigner.appspot.com/components/gk-jquerymobile/listview.html,http://jqmdesigner.appspot.com/components/gk-jquerymobile/listview-li.html,http://jqmdesigner.appspot.com/components/gk-jquerymobile/header.html"
+  callback="mobileInitPage" src="http://jqmdesigner.appspot.com/components/gk-loader/gk-loader.js"></script>
+  <title>EZo App</title>
+</head>
+
+<body gk-app>
+  <!-- Page: home  -->
+  <div is="page" id="home" data-role="page">
+    <div is="header" data-role="header" data-position="fixed" data-theme="b">
+      <h3>Yilan</h3>
+    </div>
+    <div is="content" role="main" class="ui-content">
+      <h2 is="gk-text" style="text-align:center;">請選擇地區</h2>
+      <div is="grid" class="ui-grid-b" style="height:95px">
+        <div is="block" class="ui-block-a" style="height:100%">
+          <a href="#yilan">
+            <img is="dragable" src="https://reeeee2019.github.io/Yilan20191113/a.png" style="width:60px; margin:5px 15px 5px 18px">
+          </a>
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">宜蘭市</h5>
+        </div>
+        <div is="block" class="ui-block-b" style="height:100%">
+          <img is="dragable" src="https://reeeee2019.github.io/Yilan20191113/b.png" style="width:70px; margin-left:10px;">
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">頭城鎮</h5>
+        </div>
+        <div is="block" class="ui-block-c" style="height:100%">
+          <img is="dragable" src="https://reeeee2019.github.io/Yilan20191113/c.png" style="width:60px; margin:5px 15px 5px 18px">
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">羅東鎮</h5>
+        </div>
+      </div>
+      <div is="grid" class="ui-grid-b" style="height:95px">
+        <div is="block" class="ui-block-a" style="height:100%">
+          <img is="dragable" src="https://reeeee2019.github.io/Yilan20191113/d.png" style="width:70px; margin:3px 10px -3px 12px">
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">蘇澳鎮</h5>
+        </div>
+        <div is="block" class="ui-block-b" style="height:100%">
+          <img is="dragable" src="https://reeeee2019.github.io/Yilan20191113/e.png" style="width:60px; margin:5px 15px 5px 18px">
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">礁溪鄉</h5>
+        </div>
+        <div is="block" class="ui-block-c" style="height:100%">
+          <img is="dragable" src="https://reeeee2019.github.io/Yilan20191113/f.png" style="width:70px; margin-left:10px;">
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">壯圍鄉</h5>
+        </div>
+      </div>
+      <div is="grid" class="ui-grid-b" style="height:95px">
+        <div is="block" class="ui-block-a" style="height:100%">
+          <img is="dragable" src="https://reeeee2019.github.io/Yilan20191113/g.png" style="width:70px; margin:0 15px 0 12px">
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">員山鄉</h5>
+        </div>
+        <div is="block" class="ui-block-b" style="height:100%">
+          <img is="dragable" src="https://reeeee2019.github.io/Yilan20191113/h.png" style="width:70px; margin-left:12px;">
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">冬山鄉</h5>
+        </div>
+        <div is="block" class="ui-block-c" style="height:100%">
+          <img is="dragable" src="https://reeeee2019.github.io/Yilan20191113/i.png" style="width:60px; margin:5px 15px 5px 18px">
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">五結鄉</h5>
+        </div>
+      </div>
+      <div is="grid" class="ui-grid-b" style="height:95px">
+        <div is="block" class="ui-block-a" style="height:100%">
+          <img is="dragable" src="https://reeeee2019.github.io/Yilan20191113/j.png" style="width:70px; margin:0 15px 0 12px">
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">三星鄉</h5>
+        </div>
+        <div is="block" class="ui-block-b" style="height:100%">
+          <img is="dragable" src="https://reeeee2019.github.io/Yilan20191113/k.png" style="width:70px; margin-left:12px;">
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">大同鄉</h5>
+        </div>
+        <div is="block" class="ui-block-c" style="height:100%">
+          <img is="dragable" src="https://reeeee2019.github.io/Yilan20191113/l.png" style="width:60px; margin:5px 15px 5px 18px">
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">南澳鄉</h5>
+        </div>
+      </div>
+    </div>
+    <div is="footer" data-role="footer" data-position="fixed" data-theme="b">
+      <h3>InfoChamp</h3>
+      <a is="button" class="ui-btn ui-btn-left  ui-btn-icon-left ui-icon-gear ui-btn-icon-notext ui-corner-all" style="margin-top:0;"></a>
+      <a is="button" class="ui-btn ui-btn-right ui-btn-icon-left ui-icon-delete ui-btn-icon-notext ui-corner-all" style="margin-top:0;"></a>
+    </div>
+  </div>
+  <!-- Page: yilan  -->
+  <div id="yilan" data-role="page" is="page">
+    <div is="header" data-role="header" data-position="fixed" data-theme="b">
+      <h3>yilan</h3>
+      <a is="button" class="ui-btn ui-btn-left" href="#home">Back</a>
+    </div>
+    <div role="main" class="ui-content" is="content">
+      <ul is="listview" data-role="listview" data-inset="true">
+        <li is="listview-li">
+          <a href="#detail1">
+            <img height="100%&quot;" src="https://reeeee2019.github.io/Yilan20191113/a01.jpg" class="ui-li-">幾米主題廣場</a>
+        </li>
+        <li is="listview-li">
+          <a href="#detail2">
+            <img height="100%&quot;" src="https://reeeee2019.github.io/Yilan20191113/a02.jpg" class="ui-li-">丟丟噹森林</a>
+        </li>
+        <li is="listview-li">
+          <a href="#detail3">
+            <img height="100%&quot;" src="https://reeeee2019.github.io/Yilan20191113/a03.jpg" class="ui-li-">窯烤山寨村</a>
+        </li>
+        <li is="listview-li">
+          <a href="#detail4">
+            <img height="100%&quot;" src="https://reeeee2019.github.io/Yilan20191113/a04.jpg" class="ui-li-">積木博物館</a>
+        </li>
+        <li is="listview-li">
+          <a href="#detail5">
+            <img height="100%&quot;" src="https://reeeee2019.github.io/Yilan20191113/a05.jpg" class="ui-li-">幸福轉運站</a>
+        </li>
+        <li is="listview-li">
+          <a href="#detail6">
+            <img height="100%&quot;" src="https://reeeee2019.github.io/Yilan20191113/a06.jpg" class="ui-li-">莎貝莉娜精靈印畫學院</a>
+        </li>
+      </ul>
+    </div>
+    <div is="footer" data-role="footer" data-position="fixed" data-theme="b">
+      <h3>NCUT</h3>
+    </div>
+  </div>
+  <!-- Page: detail1  -->
+  <div id="detail1" data-role="page" is="page">
+    <div is="header" data-role="header" data-position="fixed" data-theme="b">
+      <h3>detail</h3>
+      <a is="button" class="ui-btn ui-btn-left" href="#yilan">Back</a>
+    </div>
+    <div role="main" class="ui-content" is="content">
+      <h3 is="gk-text">幾米主題廣場</h3>
+      <img style="width:100%;" src="https://reeeee2019.github.io/Yilan20191113/a01.jpg" is="image">
+      <p is="p">地址：宜蘭縣宜蘭市光復路1號(宜蘭火車站左側舊宿舍區)</p>
+      <p is="p">「幾米主題廣場」位於宜蘭火車站南側，原為廢棄的鐵路局舊宿舍區，後經過重新規劃整建，除了保留原有的歷史建築與老樹綠蔭外，更以「記憶片刻風景」為主題，置入取自知名繪本作家「幾米」的場景所製成的裝置藝術，包含「向左走‧向右走」、「星空」…等繪本中的著名場景，都在此原貌重現。不但已成為拍照的著名場景，更是全台第一座幾米主題廣場。</p>
+    </div>
+    <div is="footer" data-role="footer" data-position="fixed" data-theme="b">
+      <h3>NCUT</h3>
+    </div>
+  </div>
+  <!-- Page: detail2  -->
+  <div id="detail2" data-role="page" is="page">
+    <div is="header" data-role="header" data-position="fixed" data-theme="b">
+      <h3>detail</h3>
+      <a is="button" class="ui-btn ui-btn-left" href="#yilan">Back</a>
+    </div>
+    <div role="main" class="ui-content" is="content">
+      <h3 is="gk-text">丟丟噹森林</h3>
+      <img style="width:100%;" src="https://reeeee2019.github.io/Yilan20191113/a02.jpg" is="image">
+      <p is="p">地址：宜蘭縣宜蘭市宜興路一段236號(宜蘭火車站對面)</p>
+      <p is="p">「丟丟噹森林」位於宜蘭火車站正前方，現在作為百果樹藝文空間使用。由黃聲遠建築師所設計，九株高達十四公尺的鋼構巨樹，以鋼鐵結構展現自然氣息，更象徵著九芎樹，打造出宜蘭舊名-九芎城的獨特意象。結合以知名繪本大師幾米的繪圖創作為意象的造景藝術，充滿童真與夢幻的幾米星空列車和一旁復古的百果樹紅磚屋，展現濃厚的藝文氣息。</p>
+    </div>
+    <div is="footer" data-role="footer" data-position="fixed" data-theme="b">
+      <h3>NCUT</h3>
+    </div>
+  </div>
+  <!-- Page: detail3  -->
+  <div id="detail3" data-role="page" is="page">
+    <div is="header" data-role="header" data-position="fixed" data-theme="b">
+      <h3>detail</h3>
+      <a is="button" class="ui-btn ui-btn-left" href="#yilan">Back</a>
+    </div>
+    <div role="main" class="ui-content" is="content">
+      <h3 is="gk-text">窯烤山寨村</h3>
+      <img style="width:100%;" src="https://reeeee2019.github.io/Yilan20191113/a03.jpg" is="image">
+      <p is="p">地址：宜蘭縣宜蘭市梅洲二路140號</p>
+      <p is="p">位於宜蘭的「窯烤山寨村」原為特色餐廳，因其木製建築搭配巨大的紅色燈籠，展現濃濃的日本風味，巨大的紅色赤魁和充滿特色的裝飾造景，讓人產生猶如來到山寨版妖怪村的錯覺，更吸引眾多旅人駐足，成為另類的新興景點。香氣四溢的現做麵包、創意餐點和充滿特色的伴手禮，也是這裡的一大賣點。</p>
+    </div>
+    <div is="footer" data-role="footer" data-position="fixed" data-theme="b">
+      <h3>NCUT</h3>
+    </div>
+  </div>
+  <!-- Page: detail4  -->
+  <div id="detail4" data-role="page" is="page">
+    <div is="header" data-role="header" data-position="fixed" data-theme="b">
+      <h3>detail</h3>
+      <a is="button" class="ui-btn ui-btn-left" href="#yilan">Back</a>
+    </div>
+    <div role="main" class="ui-content" is="content">
+      <h3 is="gk-text">積木博物館</h3>
+      <img style="width:100%;" src="https://reeeee2019.github.io/Yilan20191113/a04.jpg" is="image">
+      <p is="p">地址：宜蘭縣宜蘭市縣政北路2號</p>
+      <p is="p">台灣開設亞洲首座積木博物館，全館超過百萬顆積木，約五百件作品。從積木生產原料與模具，到美國知名樂高大師作品，展出數百件國內、外大師級鉅作。館藏全球最長積木名畫清明上河圖、世界最大積木龜與會發光的亮亮積木，全台唯一！
+      </p>
+    </div>
+    <div is="footer" data-role="footer" data-position="fixed" data-theme="b">
+      <h3>NCUT</h3>
+    </div>
+  </div>
+  <!-- Page: detail5  -->
+  <div id="detail5" data-role="page" is="page">
+    <div is="header" data-role="header" data-position="fixed" data-theme="b">
+      <h3>detail</h3>
+      <a is="button" class="ui-btn ui-btn-left" href="#yilan">Back</a>
+    </div>
+    <div role="main" class="ui-content" is="content">
+      <h3 is="gk-text">幸福轉運站</h3>
+      <img style="width:100%;" src="https://reeeee2019.github.io/Yilan20191113/a05.jpg" is="image">
+      <p is="p">地址：宜蘭縣宜蘭市和睦路2號(舊宜蘭市國光客運站)</p>
+      <p is="p">宜蘭縣政府聯合國有財產局共同合作開發，將閒置許久的舊宜蘭市國光客運站改造成「幸福轉運站」，運用廢棄的公車，重新花卉創意，改造發揮成為新的裝置藝術。造景以長頸鹿和大象等動物意向為主題，結合遊樂器材，讓藝術除了欣賞，更多了鞦韆、滑梯等玩樂功能。站內還有繪本家幾米新作忘記親一下的主角進駐，為宜蘭市的新興拍照景點。
+      </p>
+    </div>
+    <div is="footer" data-role="footer" data-position="fixed" data-theme="b">
+      <h3>NCUT</h3>
+    </div>
+  </div>
+  <!-- Page: detail6  -->
+  <div id="detail6" data-role="page" is="page">
+    <div is="header" data-role="header" data-position="fixed" data-theme="b">
+      <h3>detail</h3>
+      <a is="button" class="ui-btn ui-btn-left" href="#yilan">Back</a>
+    </div>
+    <div role="main" class="ui-content" is="content">
+      <h3 is="gk-text">莎貝莉娜精靈印畫學院</h3>
+      <img style="width:100%;" src="https://reeeee2019.github.io/Yilan20191113/a06.jpg" is="image">
+      <p is="p">地址：宜蘭縣宜蘭市梅洲一路16-3號</p>
+      <p is="p">『莎貝莉娜』是由美吉樂企業所自創的MIT品牌，美吉樂成立已二十餘年，長期為歐美知名DIY手工藝品牌代工，多年來累積深厚的研發能力，技術成熟、品質精良，並擁有多國水晶透明印章及多用印台的獨家專利認證；幾年前因響應產業觀光政策而成立印畫文創體驗館，開始對外開放參觀並且提供印畫技巧體驗課程。 『莎貝莉娜』巧妙運用古代印章的文化傳統創造出極具特色的印畫產業；「印」與「畫」本是二件事，創辦人游源在總經理，將文創產業的創新思維與設計整合，讓「印」與「畫」的融合更為淺顯易懂，並且以溫馨、童趣的形象，讓來客更容易認識這項陌生的產業文化，為提昇對來客的服務品質，2016年成立「精靈印畫學院」，持續推動「印畫」文創的意涵，期許開啟「印畫」的文創產業版圖。
+      </p>
+    </div>
+    <div is="footer" data-role="footer" data-position="fixed" data-theme="b">
+      <h3>NCUT</h3>
+    </div>
+  </div>
+</body>
+
+</html>
